@@ -1,0 +1,122 @@
+/** COMMON CSS  */
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans:wght@700&family=Poppins:wght@400;500;600&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primaryFont: "Poppins", sans-serif;
+  --secondaryFont: "PT Sans", sans-serif;
+  --primaryColor: #ffcc00;
+  --headingColor: #353535;
+  --bgGradient: linear-gradient(95.13deg, #ffcc00 -21.46%, #fff5cb 112.13%);
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  width: 1110px;
+  margin: auto;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+body {
+  font-family: var(--primaryFont);
+}
+
+.align-center {
+  align-items: center;
+}
+
+/** COMMON CSS  */
+
+/* * NAV STARTS HERE */
+nav .logo {
+  width: 30%;
+}
+nav .menu {
+  width: 70%;
+  text-align: right;
+}
+
+nav .menu ul li {
+  display: inline-block;
+}
+
+nav .menu ul li a {
+  padding: 26px 22px 15px 22px;
+  display: block;
+
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 200%;
+  color: var(--headingColor);
+  position: relative;
+  text-transform: uppercase;
+}
+
+nav .menu ul li a::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: var(--headingColor);
+  transition: 0.35s;
+}
+
+nav .menu ul li:hover a::after {
+  width: 100%;
+}
+
+nav .logo {
+  align-self: center;
+}
+
+/* * NAV ENDS HERE */
+
+/* * BANNER STARTS HERE */
+#banner .banner_img{
+    width: 45%;
+}
+#banner .banner_cnt {
+  width: 55%;
+}
+
+.banner_cnt {
+  color: var(--headingColor);
+}
+.banner_cnt h5 {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 36px;
+}
+
+.banner_cnt h2 {
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 83px;
+}
+
+.banner_cnt p{
+    font-weight: 400;
+font-size: 20px;
+line-height: 180%;
+}
+
+/* * BANNER STARTS HERE */
